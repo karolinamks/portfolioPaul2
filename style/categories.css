@@ -272,4 +272,20 @@ header a:hover{
     color: #ffe000;
   }
 
+  .modal-image-container{
+    left: 3%;
+    width: 94%;
+  }
+
+  .cross{
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  #modal-title{
+    font-size: 35px;
+    top: 0;
+  }
+
 }
