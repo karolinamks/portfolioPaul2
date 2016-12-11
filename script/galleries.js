@@ -69,11 +69,16 @@ cross.addEventListener("click", function(){
 var mobileMenu = document.getElementById("mobile-menu")
 var mobileMenuDetail = document.getElementById("mobile-menu-detail")
 var mobileFlag = false
+var menuIcon = document.getElementById("menu-icon")
 
 mobileMenu.addEventListener("click", function(element){
-  if (mobileFlag)
+  if (mobileFlag){
     mobileMenuDetail.classList.remove("appear")
-  else
+    menuIcon.classList.remove("pos-rotate")
+  }
+  else{
     mobileMenuDetail.classList.add("appear")
+    menuIcon.classList.add("pos-rotate")  
+  }
   mobileFlag = !mobileFlag
 })

@@ -53,3 +53,9 @@ a {
 .invisible{
   visibility: hidden;
 }
+
+.pos-rotate{
+  display: inline-block;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+}
