@@ -64,3 +64,16 @@ cross.addEventListener("click", function(){
   var content = document.getElementById("menu")
   content.style.marginTop = ""
 })
+
+
+var mobileMenu = document.getElementById("mobile-menu")
+var mobileMenuDetail = document.getElementById("mobile-menu-detail")
+var mobileFlag = false
+
+mobileMenu.addEventListener("click", function(element){
+  if (mobileFlag)
+    mobileMenuDetail.classList.remove("appear")
+  else
+    mobileMenuDetail.classList.add("appear")
+  mobileFlag = !mobileFlag
+})

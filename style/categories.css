@@ -245,6 +245,7 @@ header a:hover{
     font-size: 50px;
     width: 100%;
     background-color: white;
+    cursor: pointer;
   }
 
   .mobile-menu-detail{
@@ -252,6 +253,13 @@ header a:hover{
     width: 100%;
     background-color: white;
     text-align: center;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s;
+  }
+
+  .appear{
+    max-height: 20em;
   }
 
   .mobile-menu-detail a{
