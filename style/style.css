@@ -25,6 +25,10 @@ a {
   text-decoration: none;
 }
 
+.garamond{
+  font-family: 'garamond'
+}
+
 .hz-tab{
   margin-left: 130px;
 }

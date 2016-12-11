@@ -1,0 +1,87 @@
+header{
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  z-index: 2
+}
+
+header a{
+  display: inline-block;
+  margin-left: 2vw;
+  margin-top: 1vw;
+  color: #63cefc;
+  font-size: 3vw;
+}
+
+header a:hover{
+  color: #ffe000;
+}
+
+.current{
+  color: black;
+}
+
+.container{
+  margin-top: 20px;
+  position: fixed;
+  height: 200px;
+  width: 41%;
+  max-width: 483px;
+  height: 100%;
+  /*background-color: green;*/
+  z-index: 1;
+}
+.paul, .paul-bis{
+  font-size: 148px;
+  left: 60px;
+  top: 85px;
+  transform: translate(0, 0);
+  margin-top: 20px;
+}
+
+.paul-bis{
+  margin-left: 5px;
+}
+
+.content{
+  top: 240px;
+  position: absolute;
+  /*background-color: pink;*/
+  margin-left: 60px;
+  margin-right: 70px;
+  margin-top: 68px;
+  z-index: 2;
+  width: 80%;
+}
+
+.icon{
+  width: 30px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.about{
+  display: inline-block;
+  font-size: 28px;
+  position: absolute;
+  margin-left: 10px;
+}
+
+.description{
+  font-size: 16px;
+  margin-top: 70px;
+}
+
+.paragraphe{
+  display: block;
+  margin-top: 28px;
+}
+
+@media screen and (max-width: 1182px) {
+  .paul, .paul-bis{
+    font-size: 13vw;
+    top: 30px;
+    left: 10%;
+    margin-top: 0;
+  }
+}
