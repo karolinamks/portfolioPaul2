@@ -1,6 +1,9 @@
 var icon = document.getElementsByClassName("icon")[0]
+var mobileIcon = document.getElementsByClassName("mobile-icon")[0]
 var plus = true
+var mobilePlus = true
 var contentText = document.getElementsByClassName("content-text")
+var mobileContentText = document.getElementsByClassName("mobile-content-text")
 
 icon.addEventListener("click", function(element){
   var image = plus ? './assets/icons/dot.png' : "./assets/icons/plus.png"
@@ -11,6 +14,18 @@ icon.addEventListener("click", function(element){
       content.classList.remove("invisible")
   }
   plus = !plus
+  element.srcElement.src = image
+})
+
+mobileIcon.addEventListener("click", function(element){
+  var image = mobilePlus ? './assets/icons/dot.png' : "./assets/icons/plus.png"
+  for (content of mobileContentText){
+    if (!mobilePlus)
+      content.classList.add("mobile-invisible")
+    else
+      content.classList.remove("mobile-invisible")
+  }
+  mobilePlus = !mobilePlus
   element.srcElement.src = image
 })
 
@@ -78,7 +93,7 @@ mobileMenu.addEventListener("click", function(element){
   }
   else{
     mobileMenuDetail.classList.add("appear")
-    menuIcon.classList.add("pos-rotate")  
+    menuIcon.classList.add("pos-rotate")
   }
   mobileFlag = !mobileFlag
 })

@@ -59,3 +59,7 @@ a {
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
 }
+
+.txt-left{
+  text-align: left;
+}

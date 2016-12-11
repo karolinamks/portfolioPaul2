@@ -199,7 +199,7 @@ header a:hover{
 
 }
 
-.mobile-header, .mobile-menu, .mobile-menu-detail{
+.mobile-header, .mobile-menu, .mobile-menu-detail, .mobile-gallery-description{
   display: none;
 }
 
@@ -286,6 +286,31 @@ header a:hover{
   #modal-title{
     font-size: 35px;
     top: 0;
+  }
+
+  .mobile-gallery-description{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 40px 0;
+  }
+
+  .mobile-icon{
+    width: 30px;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .mobile-about{
+    font-size: 28px;
+  }
+
+  .mobile-description{
+    padding: 30px 207px;
+  }
+
+  .mobile-invisible{
+    display: none;
   }
 
 }
