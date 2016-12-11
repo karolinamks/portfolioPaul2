@@ -197,11 +197,11 @@ header a:hover{
 }
 
 @media screen and (max-width: 810px){
-  .container{
+  /*.container{
     position: static;
   }
 
   .paul, .paul-bis{
     display: none;
-  }
+  }*/
 }
