@@ -107,8 +107,8 @@ header a:hover{
 }
 
 .gallery img{
-  width: 245px;
-  margin: 10px;
+  width: 204px;
+  margin: 8px;
   cursor: pointer;
 }
 
@@ -162,6 +162,13 @@ header a:hover{
   }
 }
 
+@media screen and (max-width: 1029px){
+  .gallery img{
+    width: 178px;
+    margin: 8px;
+  }
+}
+
 @media screen and (min-width: 1298px) {
   .cross{
     left: 1181px;
@@ -190,10 +197,6 @@ header a:hover{
     width: calc(84% - 342px)
   }
 
-  .gallery img{
-    width: 178px;
-    margin: 8px;
-  }
 }
 
 @media screen and (max-width: 810px){
