@@ -199,12 +199,69 @@ header a:hover{
 
 }
 
-@media screen and (max-width: 810px){
-  /*.container{
-    position: static;
+.mobile-header, .mobile-menu, .mobile-menu-detail{
+  display: none;
+}
+
+@media screen and (max-width: 873px){
+  header{
+    display: none;
   }
 
-  .paul, .paul-bis{
+  .container{
     display: none;
-  }*/
+  }
+
+  .gallery{
+    position: static;
+    width: 100%;
+    text-align: center;
+    margin: 0
+  }
+
+  .gallery img{
+    width: 300px;
+    height: 274px;
+    display: block;
+    margin: 10px auto;
+  }
+
+  .mobile-header{
+    display: block;
+    width: 100%;
+    text-align: center;
+
+  }
+
+  .mobile-header a{
+    color: #63cefc;
+    font-size: 90px;
+    text-shadow: 4px 0px white;
+  }
+
+  .mobile-menu{
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    width: 100%;
+    background-color: white;
+  }
+
+  .mobile-menu-detail{
+    display: block;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+  }
+
+  .mobile-menu-detail a{
+    display: block;
+    font-size: 50px;
+    color: #63cefc;
+  }
+
+  .mobile-menu-detail a:hover{
+    color: #ffe000;
+  }
+
 }
