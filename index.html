@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Paul M</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  </head>
+  <body>
+    <div class="container">
+      <p class="paul" id="paul">PAUL&#8239;&#8239;M</p>
+      <p class="paul-bis">PAUL&#8239;&#8239;M</p>
+      <div class="links">
+        <a href="./about.html">.about</a>
+        <span class="hz-tab"></span>
+        <a href="./wbsite.html">.wbsite</a>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      var links = document.body.getElementsByTagName('a')
+      var paul = document.getElementById("paul")
+
+      for (link of links){
+        link.addEventListener("mouseover", function(element){
+          element.srcElement.style.color = "#ffe000"
+          paul.style.color = "#ffe000"
+        })
+        link.addEventListener("mouseleave", function(element){
+          element.srcElement.style.color = "#ffffff"
+          paul.style.color = "#63cefc"
+        })
+      }
+    </script>
+  </body>
+</html>

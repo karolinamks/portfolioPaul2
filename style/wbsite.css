@@ -1,0 +1,119 @@
+a{
+  color: #63cefc;
+}
+
+.paul, .paul-bis{
+  top: 139px;
+  font-size: 148px;
+}
+
+.paul-bis{
+  margin-left: 5px;
+}
+
+.pictures {
+  position: relative;
+  margin: auto;
+  width: 80%;
+  max-width: 1080px;
+  top: 250px;
+  text-align: center;
+}
+
+.picture {
+  width: 275px;
+  height: 235px;
+  color: #63cefc;
+  position: relative;
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: 10px;
+  background-size: contain;
+
+}
+
+.black-filter{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.3s ease-in-out;/* transition pour Chrome et Safari */
+  -moz-transition: opacity 0.3s ease-in-out;/* transition pour Firefox */
+  -o-transition: opacity 0.3s ease-in-out;/* transition pour Opéra */
+  transition: opacity 0.3s ease-in-out;
+}
+
+.picture a{
+  position: absolute;
+  visibility: hidden;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.picture p{
+  position: absolute;
+  font-size: 45px;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.hover-picture{
+  opacity: 1 !important;
+  /*display: block !important;*/
+  visibility: visible !important;
+}
+
+.fashion-week{
+  background-image: url('../assets/pictures/fashionweek_gallery/LANVIN.JPG');
+}
+.portrait{
+  background-image: url('../assets/pictures/fashionweek_gallery/LANVIN.JPG');
+}
+.hip-hop{
+  background-image: url('../assets/pictures/fashionweek_gallery/LANVIN.JPG');
+}
+.memories{
+  background-image: url('../assets/pictures/fashionweek_gallery/LANVIN.JPG');
+}
+.about{
+  background-image: url('../assets/pictures/fashionweek_gallery/LANVIN.JPG');
+}
+
+@media screen and (max-width: 480px), screen and (max-height: 480px) {
+  .paul, .paul-bis{
+    font-size: 107px;
+    margin-top: -50px;
+  }
+
+  .pictures{
+    margin-top: -105px;
+  }
+
+  .picture{
+    width: 255px;
+    height: 217px;
+    margin-left: auto;
+  }
+
+  .picture a, .picture p, .black-filter{
+    visibility: visible;
+    opacity: 1;
+    font-size:
+  }
+
+  .black-filter{
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}

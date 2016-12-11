@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'DIN';
+    src: url('../assets/fonts/DIN.otf');
+}
+
+@font-face {
+    font-family: 'garamond';
+    src: url('../assets/fonts/garamond.otf');
+}
+
+html, body, p, h1, a{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #ffe000
+}
+
+p, a {
+  font-family: 'DIN';
+}
+
+a {
+  text-decoration: none;
+}
+
+.hz-tab{
+  margin-left: 130px;
+}
+
+.paul, .paul-bis{
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 370px;
+  color: #63cefc;
+  z-index: 2;
+}
+
+.paul-bis{
+  color: white;
+  z-index: 1;
+  margin-left: 10px;
+}
