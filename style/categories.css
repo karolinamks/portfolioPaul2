@@ -1,8 +1,32 @@
+/*DEBUG*/
+
+/*.container{
+  background-color: green;
+}
+
+.content{
+  background-color: pink;
+}
+
+.gallery{
+  background-color: red;
+}*/
+
+.modal-image-container{
+  /*background-color: pink;*/
+}
+
+/******/
+
+*{
+  /*transition: all 0.3s;*/
+}
+
 header{
   width: 100%;
   background-color: white;
   position: fixed;
-  z-index: 2
+  z-index: 4
 }
 
 header a{
@@ -24,12 +48,10 @@ header a:hover{
 .container{
   margin-top: 20px;
   position: fixed;
-  height: 200px;
-  width: 41%;
+  /*width: 41%;*/
   max-width: 483px;
-  height: 100%;
-  /*background-color: green;*/
-  z-index: 1;
+  /*height: 100%;*/
+  z-index: 3;
 }
 .paul, .paul-bis{
   font-size: 148px;
@@ -44,12 +66,11 @@ header a:hover{
 }
 
 .content{
-  top: 240px;
-  position: absolute;
-  /*background-color: pink;*/
+  /*top: 240px;*/
+  /*position: absolute;*/
   margin-left: 60px;
   margin-right: 70px;
-  margin-top: 68px;
+  margin-top: 300px;
   z-index: 2;
   width: 80%;
 }
@@ -77,11 +98,110 @@ header a:hover{
   margin-top: 28px;
 }
 
+.gallery{
+  width: calc(90% - 483px);
+  margin-left: 483px;
+  position: absolute;
+  top: 28%;
+  text-align: center;
+}
+
+.gallery img{
+  width: 245px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.modal{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #ffe000;
+	z-index: 2;
+	display: none;
+}
+
+.modal-image-container{
+  position: absolute;
+  left: 483px;
+  display: inline-block;
+  max-width: 748px;
+  max-height: 730px;
+  max-width: 750px;
+  width: calc(95% - 483px);
+  height: 78%;
+  top: 22%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#modal-title{
+  position: absolute;
+  top: 700px;
+  font-size: 75px;
+  background-color: white;
+  left: 60px;
+}
+
+.cross{
+  position: absolute;
+  width: 100px;
+  left: 91%;
+  top: 17%;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 1182px) {
   .paul, .paul-bis{
-    font-size: 13vw;
-    top: 30px;
+    font-size: 16vw;
+    /*top: 30px;*/
     left: 10%;
     margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1298px) {
+  .cross{
+    left: 1181px;
+  }
+}
+
+@media screen and (max-width: 1200px){
+  .cross{
+    width: 72px;
+    top: 19%;
+  }
+}
+
+@media screen and (max-width: 940px){
+
+  #modal-title{
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  .content{
+    margin-left: 30px;
+  }
+
+  .gallery{
+    width: calc(84% - 342px)
+  }
+
+  .gallery img{
+    width: 178px;
+    margin: 8px;
+  }
+}
+
+@media screen and (max-width: 810px){
+  .container{
+    position: static;
+  }
+
+  .paul, .paul-bis{
+    display: none;
   }
 }
