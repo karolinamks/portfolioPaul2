@@ -29,18 +29,6 @@ mobileIcon.addEventListener("click", function(element){
   element.srcElement.src = image
 })
 
-mobileIcon.addEventListener("touchend", function(element){
-  var image = mobilePlus ? './assets/icons/dot.png' : "./assets/icons/plus.png"
-  for (content of mobileContentText){
-    if (!mobilePlus)
-      content.classList.add("mobile-invisible")
-    else
-      content.classList.remove("mobile-invisible")
-  }
-  mobilePlus = !mobilePlus
-  element.srcElement.src = image
-})
-
 // MODAL
 
 var modal = document.getElementById("modal")
